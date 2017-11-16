@@ -1,0 +1,11 @@
+.navbar {
+    background: #333;
+    /* We can add transition for smooth color animation */
+    -webkit-transition: 400ms;
+    transition: 400ms;
+}
+ 
+/* Change Status bar background when panel opened */
+body.with-panel-left-reveal .navbar {
+    background: #222;
+} 
