@@ -3,7 +3,7 @@ var myApp = new Framework7({
 	// Default title for modals
     modalTitle: 'Framework7',
 	cache:false,
-	pushState:true,
+	pushState:false,
 	swipeBackPage:true,
     swipePanel: 'left',
 	material: true
