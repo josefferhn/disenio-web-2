@@ -1,6 +1,6 @@
 .navbar {
-    background: #333;
-    /* We can add transition for smooth color animation */
+    /*background: #333;
+     We can add transition for smooth color animation */
     -webkit-transition: 400ms;
     transition: 400ms;
 }
@@ -9,3 +9,49 @@
 body.with-panel-left-reveal .navbar {
     background: #222;
 } 
+.hidden{
+	display: none;
+}
+.bg-panel{
+	background-image: url(../img/bg-panel.png);
+	background-position: center left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	margin: 0;
+}
+.bg-panel ul{
+	list-style: none;
+}
+.panel .list-block .item-inner::after{
+	border-bottom: 0;
+}
+.toolbar .tabbar-label {
+    display: block;
+}
+
+.swiper-container {
+	 width: 100%;
+     height: auto;
+ }
+.swiper-slide {
+  background: #fff;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+.swiper-slide span {
+  text-align:center;
+  display:block;
+  margin: 20px;
+  font-size:21px;
+}
+
+.popover{
+	width: 250px;
+}
+
+
+
+
+
+

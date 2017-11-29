@@ -25,15 +25,86 @@
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
-      <div class="content-block">
-        <p>Left panel content goes here</p>
+      <div class="content-block bg-panel">
+        <div class="content-block-inner">
+        	<ul>
+				<li><b>Fernando Ramos</b></li>
+				<li>jframos@unitec.edu</li>
+			</ul>
+		</div>
       </div>
+      <div class="list-block">
+     		<div class="list-group">
+      		<ul>
+      			<li>
+					<a class="item-link close-panel" href="about.html">
+						<div class="item-content">
+							<div class="item-media">
+								<i class="material-icons color-red">home</i>
+							</div>
+							<div class="item-inner">
+							  <div class="item-title">About</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="item-link close-panel" href="list-block.html">
+						<div class="item-content">
+							<div class="item-media">
+								<i class="material-icons color-red">link</i>
+							</div>
+							<div class="item-inner">
+							  <div class="item-title">List Block</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="item-link close-panel" href="popup.html">
+						<div class="item-content">
+							<div class="item-media">
+								<i class="material-icons color-red">link</i>
+							</div>
+							<div class="item-inner">
+							  <div class="item-title">Popover</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="item-link close-panel" href="media-list.html">
+						<div class="item-content">
+							<div class="item-media">
+								<i class="material-icons color-red">link</i>
+							</div>
+							<div class="item-inner">
+							  <div class="item-title">Media List</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="item-link close-panel" href="tapbar.html">
+						<div class="item-content">
+							<div class="item-media">
+								<i class="material-icons color-red">link</i>
+							</div>
+							<div class="item-inner">
+							  <div class="item-title">Tab Bar</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		  </div>
+		  </div>
     </div>
     <!-- Views -->
     <div class="views">
       <div class="view view-main">
        <div class="pages navbar-fixed">
-		   <div data-page="index" class="page">
+		   <div class="page" data-page="index" >
 				<div class="navbar">
 				  <div class="navbar-inner">
 					<div class="center sliding">FrameWork7 Test</div>
@@ -42,54 +113,84 @@
 					</div>
 				  </div>
 				</div>
-				<div class="page-content">
-			  		<div class="content-block-title">
-			  			Welcome To Framework7
+				
+    
+				<section class="page-content search-here">
+					<div class="content-block-title">
+			  			Your Recently Viewed Items
 			  		</div>
-			  		<div class="content-block">
-			  			<div class="list-block">
-					  		<ul>
-								<li>
-									<a class="item-link" href="about.html">
-										<div class="item-content">
-											<div class="item-media">
-												<i class="material-icons color-red">home</i>
-											</div>
-											<div class="item-inner">
-											  <div class="item-title">About</div>
-											</div>
-										</div>
-									</a>
-								</li>
-							</ul>
-					  
-						</div>
-					</div>
-					<div class="content-block-title">Cards</div>
-					<div class="card">
-						<div class="card-content">
-							<div class="card-header">
-								Info Card Cambio
-							</div>
-							<div class="card-content">
-								<div class="card-content-inner">
-								<p>Lorem</p>
+			  			
+					<div class="swiper-container swiper-init swiper-container-horizontal" data-pagination=".swiper-pagination" data-slides-per-view="2">
+					
+						<div class="swiper-wrapper">
+							
+							<div class="swiper-slide swiper-slide-active">
+								<div class="list-block">
+								<article class="content-block search-info">
+
+									<div class="item-media">
+										<img src="img/book-zelda.jpg" width="60px">
+									</div>
+									<div class="item-content">
+										<b>The Legend of Zelda: Art & Artifacts</b>
+										<p>$10.00</p>
+									</div>
+								</article>
 								</div>
 							</div>
+							<div class="swiper-slide search-info">
+								<article class="content-block">
+
+									<div class="item-media">
+										<img src="img/book-zelda.jpg" width="60px">
+									</div>
+									<div class="item-content">
+										<b>The Legend of Zelda: Art & Artifacts</b>
+										<p>$10.00</p>
+									</div>
+
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="content-block">
+
+									<div class="item-media">
+										<img src="img/book-zelda.jpg" width="60px">
+									</div>
+									<div class="item-content">
+										<b>The Legend of Zelda: Art & Artifacts</b>
+										<p>$10.00</p>
+									</div>
+
+								</article>
+							</div>
+							
+							
+						</div>
+						<div class="swiper-pagination swiper-pagination-bullets">
+							<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+							<span class="swiper-pagination-bullet"></span>
+							<span class="swiper-pagination-bullet"></span>
+
 						</div>
 					</div>
-				</div>
+					
+				
+			   </section>
+				 
+				
 			</div>
 		</div>
 				<!-- Bottom Toolbar-->
-        <div class="toolbar">
+        <div class="toolbar toolbar-bottom">
           <div class="toolbar-inner">
-            <!-- Toolbar links -->
             <a href="about.html" class="link">
-            	<i class="material-icons">home</i>
+            	<i class="icon material-icons">home
+					<span class="badge bg-bluegray">2</span>
+            	</i>
             	<span class="tabbar-label">Inicio</span>
             </a>
-            <a href="#" class="link">Link 2</a>
+            <a href="#" class="link"><i class="icon material-icons">today</i></a>
           </div>
         </div>
 	</div>
